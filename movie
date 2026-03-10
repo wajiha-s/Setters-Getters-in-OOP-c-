@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+class Movie
+{
+private:
+    int duration;  // minutes and hours
+    float rating;
+    int year;
+
+public:
+    // Setters
+void setDuration(int d)
+{
+duration = d;
+}
+void setRating(float r) 
+{ 
+rating = r;
+}
+void setYear(int y) 
+{ 
+year = y; 
+}
+
+    // Getters
+int getDuration()
+{
+return duration;
+}
+float getRating()
+{
+return rating; 
+}
+int getYear()
+{
+return year; 
+}
+};
+
+int main() 
+{
+  Movie m1;
+  m1.setDuration(120);
+  m1.setRating(8.5);
+  m1.setYear(2022);
+ cout << "Duration: " << m1.getDuration() << " mins" << endl;
+ cout << "Rating: " << m1.getRating() << endl;
+cout << "Year: " << m1.getYear() << endl;
+    return 0;
+}
