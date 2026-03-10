@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class Student {
+private:
+    int marks, id;
+
+public:
+    void setData(int m, int i)
+    {
+        marks = m;
+        id = i;
+    }
+
+    int getMarks()
+    {      // getter for marks
+        return marks;
+    }
+
+    int getId()
+    {         // getter for id
+        return id;
+    }
+};
+
+int main() {
+    Student s1;
+    s1.setData(50, 456);
+
+    cout << "Marks are = " << s1.getMarks() << endl;
+    cout << "ID is = " << s1.getId() << endl;
+
+    return 0;
+}
